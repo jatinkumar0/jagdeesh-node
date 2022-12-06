@@ -10,8 +10,8 @@ agent any
     
     stage('Deploy'){
       steps{
-      sh 'pm2 delete all'
-      sh 'pm2 start index.js'
+      sh 'sudo pm2 delete all'
+      sh 'sudo pm2 start index.js'
       }
     }
   
